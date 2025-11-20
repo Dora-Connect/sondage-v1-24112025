@@ -53,9 +53,7 @@ export default function App() {
             <div className="hidden md:flex items-center gap-3 sm:gap-6 md:gap-8">
               <a href="#about" className="text-xs sm:text-sm md:text-base text-gray-600 hover:text-[#0A2540] transition-colors">{t.nav.about}</a>
               <a href="#survey" className="text-xs sm:text-sm md:text-base text-gray-600 hover:text-[#0A2540] transition-colors">{t.nav.survey}</a>
-              <ContactForm variant="ghost" className="text-xs sm:text-sm md:text-base text-gray-600 hover:text-[#0A2540] transition-colors px-0" language={language}>
-                {t.nav.contact}
-              </ContactForm>
+
               <div className="flex items-center gap-1 sm:gap-2 ml-2 sm:ml-4 border-l pl-3 sm:pl-4">
                 <button
                   onClick={() => changeLanguage('fr')}
@@ -105,11 +103,7 @@ export default function App() {
               >
                 {t.nav.survey}
               </a>
-              <div onClick={() => setMobileMenuOpen(false)}>
-                <ContactForm variant="ghost" className="text-sm text-gray-600 hover:text-[#0A2540] transition-colors px-0 w-full justify-start" language={language}>
-                  {t.nav.contact}
-                </ContactForm>
-              </div>
+
               <div className="flex items-center gap-2 pt-3 border-t">
                 <button
                   onClick={() => {
